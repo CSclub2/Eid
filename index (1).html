@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>عيدنا أحلى | العيد فرحة.. واللعب يجمعنا</title>
+<link href="https://fonts.googleapis.com/css2?family=Lalezar&family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--o:#454316;--g:#B9B26C;--pl:#FBC2C4;--pb:#B95660;--m:#4C051B}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth}
+body{font-family:Tajawal,Tahoma,sans-serif;background:var(--m);color:var(--pl);line-height:1.8;overflow-x:hidden}
+h1,h2,h3,.dsp{font-family:Lalezar,Tajawal,sans-serif;font-weight:400}
+section{padding:90px 6% 60px;position:relative}
+.light{background:var(--pl);color:var(--m)}
+.olive{background:var(--o)}
+h2{font-size:clamp(2.4rem,7vw,5rem);line-height:1.1;margin-bottom:10px}
+h2 em{font-style:normal;color:var(--pb)}
+.light h2 em{color:var(--pb)}
+.en{display:block;font:700 .85rem Tajawal;letter-spacing:5px;color:var(--pb);direction:ltr;text-align:right;margin-bottom:4px}.olive .en{color:var(--g)}
+.sub{max-width:560px;opacity:.85;margin-bottom:30px}
+nav{position:fixed;top:0;inset-inline:0;z-index:40;display:flex;gap:6px;align-items:center;padding:10px 4%;background:rgba(76,5,27,.55);backdrop-filter:blur(14px);border-bottom:1px solid rgba(185,178,108,.3)}
+nav b{font:1.5rem Lalezar;color:var(--g);margin-inline-end:auto}
+nav a,nav button{color:var(--pl);text-decoration:none;font:500 .9rem Tajawal;padding:4px 12px;border-radius:30px;border:0;background:none;cursor:pointer;transition:.3s;white-space:nowrap}
+nav a:hover,nav button:hover,nav button.on{background:var(--pb);color:var(--pl)}
+.btn{font:700 1rem Tajawal;background:var(--g);color:var(--o);border:2px solid var(--g);padding:11px 28px;border-radius:50px;cursor:pointer;text-decoration:none;display:inline-block;transition:.3s}
+.btn:hover{transform:translateY(-3px) rotate(-1deg);background:var(--pl);border-color:var(--pl)}
+.btn.o{background:none;color:var(--g)}
+.btn.b{background:var(--pb);border-color:var(--pb);color:var(--pl)}
+.btn.s{padding:5px 14px;font-size:.85rem}
+.light .btn.o{color:var(--o);border-color:var(--o)}
+.glass{background:rgba(251,194,196,.1);backdrop-filter:blur(16px);border:1px solid rgba(251,194,196,.3);border-radius:28px;padding:24px}
+.light .glass{background:rgba(251,255,255,.0);background:rgba(76,5,27,.07);border-color:rgba(76,5,27,.2)}
+/* hero */
+#hero{min-height:100vh;display:grid;align-content:center;background:radial-gradient(circle at 20% 20%,var(--pb) -30%,var(--m) 55%);overflow:hidden;padding-top:110px}
+#hero:before{content:"";position:absolute;inset:0;background:url(image/pattern.svg);opacity:.5}
+#hero>*{position:relative}
+.moon{position:absolute!important;left:-6%;top:12%;width:min(46vw,420px);aspect-ratio:1;border-radius:50%;background:var(--g);box-shadow:0 0 120px rgba(185,178,108,.5);animation:fl 7s ease-in-out infinite}
+.moon:after{content:"";position:absolute;width:82%;aspect-ratio:1;border-radius:50%;background:var(--m);top:-6%;right:-18%}
+@keyframes fl{50%{transform:translateY(-22px) rotate(4deg)}}
+#hero h1{font-size:clamp(3rem,10vw,8rem);line-height:1.05;max-width:900px}
+#hero h1 span{color:var(--g)} #hero h1 i{font-style:normal;color:var(--pb);-webkit-text-stroke:0}
+.tag{display:inline-block;border:1px solid var(--g);color:var(--g);border-radius:30px;padding:2px 16px;margin-bottom:14px}
+.hr{display:grid;grid-template-columns:1.3fr 1fr;gap:30px;align-items:end;margin-top:26px}
+.cd{display:flex;gap:10px;margin:12px 0}
+.cd div{flex:1;text-align:center;background:rgba(76,5,27,.5);border-radius:16px;padding:8px 2px}
+.cd b{display:block;font:2.2rem Lalezar;color:var(--g);line-height:1.1}
+.cd small{font-size:.75rem}
+input,select,textarea{font:500 1rem Tajawal;width:100%;padding:11px 14px;border-radius:14px;border:2px solid var(--g);background:rgba(251,194,196,.12);color:inherit;direction:rtl}
+.light input,.light textarea,.light select{background:rgba(255,255,255,.0);background:rgba(76,5,27,.06);border-color:var(--pb)}
+input:focus,textarea:focus{outline:0;border-color:var(--pb)}
+option{color:var(--m)}
+.mq{background:var(--g);color:var(--o);overflow:hidden;white-space:nowrap;padding:8px 0;font:1.6rem Lalezar}
+.mq div{display:inline-block;animation:mq 22s linear infinite}
+@keyframes mq{to{transform:translateX(50%)}}
+.rv{opacity:0;transform:translateY(40px);transition:1s}.rv.on{opacity:1;transform:none}
+/* games */
+.gg{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px}
+.gc{padding:24px;border-radius:30px 6px 30px 6px;background:var(--m);color:var(--pl);transition:.4s;position:relative;overflow:hidden}
+.gc:nth-child(even){background:var(--o);border-radius:6px 30px 6px 30px;margin-top:22px}
+.gc:hover{transform:translateY(-8px) rotate(-1deg);box-shadow:0 18px 40px rgba(76,5,27,.45)}
+.gc .em{font-size:3.4rem;display:block}
+.gc h3{font-size:1.7rem;color:var(--g)}
+.gc p{font-size:.9rem;opacity:.85;min-height:52px}
+.gc .r{display:flex;gap:8px;margin-top:8px}
+/* teams */
+.tf{display:grid;grid-template-columns:1fr 1fr;gap:12px;max-width:760px}
+.tf .f{grid-column:1/-1}
+.sw{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+.sw button{width:42px;height:42px;border-radius:50%;border:3px solid transparent;cursor:pointer;font-size:1.3rem;background:rgba(76,5,27,.1);transition:.2s}
+.sw button.c{border:3px solid var(--pl)}
+.sw button.on{border-color:var(--m);transform:scale(1.2)}
+#tl{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:16px;margin-top:30px}
+.tc{border-radius:24px;padding:20px;color:var(--pl);position:relative;overflow:hidden;animation:pop .5s}
+@keyframes pop{from{opacity:0;transform:scale(.9)}}
+.tc .ic{font-size:2.6rem}.tc h3{font-size:1.6rem}
+.tc small{display:block;opacity:.9}
+.tc .pt{position:absolute;top:12px;left:16px;font:2rem Lalezar}
+/* board */
+.pod{display:flex;align-items:flex-end;justify-content:center;gap:12px;margin:30px 0;min-height:300px}
+.pod div{flex:1;max-width:210px;text-align:center;border-radius:20px 20px 0 0;padding:14px 6px;color:var(--pl);transition:all .8s}
+.pod .n{font-size:2.4rem}
+.rows .rw{display:flex;align-items:center;gap:14px;padding:12px 18px;border-radius:18px;margin:8px 0;background:rgba(251,194,196,.1);border:1px solid rgba(251,194,196,.2);transition:.5s}
+.rw.up{animation:up 1.4s;border-color:var(--g)}
+@keyframes up{0%{transform:translateY(50px);background:var(--g)}100%{transform:none}}
+.rw .rk{font:1.8rem Lalezar;color:var(--g);width:36px}.rw .nm{flex:1}.rw small{opacity:.8}
+/* stage */
+#st{position:fixed;inset:0;z-index:80;background:var(--m);overflow:auto;padding:80px 5% 40px;display:none}
+#st.on{display:block}
+.in{max-width:760px;margin:auto}
+.top{display:flex;justify-content:space-between;align-items:center;gap:10px;color:var(--g);font-weight:700;flex-wrap:wrap}
+.tb{height:8px;background:rgba(251,194,196,.2);border-radius:8px;margin:12px 0}
+.tb i{display:block;height:100%;width:100%;background:var(--g);border-radius:8px}
+.chips{display:flex;gap:8px;flex-wrap:wrap;margin:10px 0}
+.chip{border-radius:30px;padding:3px 14px;cursor:pointer;border:2px solid transparent;color:var(--pl);font-weight:700}
+.chip.on{border-color:var(--pl);transform:scale(1.08)}
+.qq{font-size:clamp(1.6rem,5vw,2.4rem);margin:16px 0;line-height:1.4}
+.opt{display:block;width:100%;text-align:right;font:500 1.1rem Tajawal;color:var(--pl);background:rgba(251,194,196,.1);border:2px solid rgba(251,194,196,.35);border-radius:16px;padding:13px 18px;margin:9px 0;cursor:pointer;transition:.25s}
+.opt:hover:not(:disabled){border-color:var(--g);transform:translateX(-8px);background:rgba(185,178,108,.2)}
+.opt.ok{background:var(--o);border-color:var(--g);color:var(--g)}
+.opt.no{background:var(--pb);border-color:var(--pb);color:var(--pl)}
+.fb{padding:14px;border-radius:16px;background:rgba(185,178,108,.18);margin:12px 0}
+.pic{font-size:9rem;text-align:center;transition:filter .6s}
+.hl li{padding:8px 14px;margin:6px 0;border-right:4px solid var(--pb);background:rgba(251,194,196,.1);list-style:none;animation:pop .4s}
+.tiles{display:flex;gap:10px;justify-content:center;margin:22px 0;direction:rtl}
+.tiles b{font:2.4rem Lalezar;background:var(--g);color:var(--o);border-radius:14px;width:56px;height:62px;display:grid;place-items:center}
+.mg{display:grid;grid-template-columns:repeat(auto-fit,minmax(80px,1fr));gap:10px;margin:16px 0}
+.mg button{font-size:2.6rem;background:rgba(251,194,196,.12);border:2px solid rgba(251,194,196,.3);border-radius:16px;padding:8px;cursor:pointer;transition:.2s}
+.mg button.s{border-color:var(--g);background:var(--pb);transform:scale(1.08)}
+.x{position:absolute;top:80px;left:5%;font-size:1.6rem}
+/* card + msgs */
+#cv{width:100%;max-width:600px;border-radius:20px;box-shadow:0 16px 50px rgba(76,5,27,.4);display:block;margin:16px 0}
+.cg{display:grid;grid-template-columns:1fr 1fr;gap:34px;align-items:start}
+#ml{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:14px;margin-top:26px}
+.mc{padding:18px;border-radius:24px 4px 24px 4px;background:var(--m);color:var(--pl);animation:pop .5s}
+.mc:nth-child(3n+2){background:var(--pb)}.mc:nth-child(3n){background:var(--o)}
+.mc b{color:var(--g);display:block;margin-top:6px}
+.hp{display:none}.hp.on{display:block}
+.hrow{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin:8px 0;padding:10px 14px;border-radius:16px;background:rgba(251,194,196,.1)}
+#toast{position:fixed;bottom:24px;left:50%;transform:translateX(-50%);background:var(--g);color:var(--o);padding:10px 24px;border-radius:30px;font-weight:700;z-index:99;display:none}
+#cf{position:fixed;inset:0;pointer-events:none;z-index:120}
+footer{background:var(--o);text-align:center;padding:30px;color:var(--g)}
+@media(max-width:760px){.hr,.cg,.tf{grid-template-columns:1fr}nav a{display:none}.moon{opacity:.5}.gc:nth-child(even){margin-top:0}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+<nav><b>عيدنا أحلى</b><a href="#games">Games</a><a href="#teams">Teams</a><a href="#board">Leaderboard</a><a href="#card">Cards</a><a href="#msgs">Wishes</a><button id="hb">🎙️ Host</button></nav>
+
+<header id="hero"><div class="moon"></div>
+<span class="tag">EID MUBARAK ✦ عيد الفطر المبارك</span>
+<h1>يا مرحبًا <span>بالعيد</span>.. ويا مرحبًا <i>بالفرحة</i></h1>
+<div class="hr"><div><p style="font-size:1.25rem;max-width:480px">اجمعوا أحبابكم، اختاروا فرقكم، واستعدوا لتحديات العيد!</p>
+<div style="display:flex;gap:12px;margin-top:16px;flex-wrap:wrap"><button class="btn" id="go">ابدأ الاحتفال · Let's Celebrate</button><a class="btn o" href="#games">اكتشف الألعاب · Play</a></div></div>
+<div class="glass"><b>العد التنازلي للعيد · Countdown</b><div class="cd" id="cd"><div><b>--</b><small>يوم · Days</small></div><div><b>--</b><small>ساعة · Hrs</small></div><div><b>--</b><small>دقيقة · Min</small></div><div><b>--</b><small>ثانية · Sec</small></div></div>
+<input type="date" id="cdi" aria-label="تاريخ العيد"><small>التاريخ مبدئي، عدّله حسب إعلان العيد.</small></div></div></header>
+<div class="mq"><div>EID MUBARAK ✦ PLAY TOGETHER ✦ العيد فرحة.. واللعب يجمعنا ✦ عيدنا أحلى ✦ العيد فرحة.. واللعب يجمعنا ✦ عيدنا أحلى ✦ العيد فرحة.. واللعب يجمعنا ✦ عيدنا أحلى ✦ </div></div>
+
+<section id="games" class="light"><div class="rv"><span class="en">// GAMES</span><h2>ألعاب <em>العيد</em></h2><p class="sub">«فردي» لتجرب بنفسك، و«جماعي» لتلعب بالفرق المحددة في لوحة المقدم.</p><div class="gg" id="gg"></div></div></section>
+
+<section id="teams" class="olive"><div class="rv"><span class="en">// TEAMS</span><h2>سجّل <em>فريقك</em></h2><p class="sub">اكتب اسم فريقك بنفسك أو اختر من الاقتراحات.</p>
+<div class="tf glass"><input id="tn" list="sg" placeholder="اسم الفريق" maxlength="24"><datalist id="sg"><option value="صقور العيد"><option value="نجوم الفرحة"><option value="أهل التحدي"><option value="فزعة العيد"><option value="كوكبة المرح"><option value="أبطال العيد"><option value="فرسان السعادة"><option value="فريق الوناسة"></datalist>
+<input id="tld" placeholder="اسم قائد الفريق" maxlength="24">
+<div class="f"><small>رمز الفريق</small><div class="sw" id="se"></div></div>
+<div class="f"><small>لون الفريق</small><div class="sw" id="sc"></div></div>
+<textarea class="f" id="tm" rows="2" placeholder="أسماء الأعضاء (افصل بينها بفاصلة)"></textarea>
+<div class="f"><button class="btn" id="ts">إضافة الفريق · Add Team</button> <button class="btn o" id="tcn" style="display:none">إلغاء التعديل</button></div></div>
+<div id="tl"></div></div></section>
+
+<section id="board"><div class="rv"><span class="en">// LEADERBOARD</span><h2>لوحة <em>الصدارة</em></h2><div class="pod" id="pod"></div><div class="rows" id="rows"></div></div></section>
+
+<section id="host" class="hp olive"><span class="en">// HOST PANEL</span><h2>لوحة <em>المقدم</em></h2><p class="sub">حدّد الفرق المشاركة، عدّل النقاط، أو أعد ضبط النتائج.</p><div id="hl"></div><div style="margin-top:14px;display:flex;gap:10px;flex-wrap:wrap"><button class="btn b" id="rs">إعادة ضبط كل النتائج</button><button class="btn o" id="stp">إيقاف المسابقة الحالية</button></div></section>
+
+<section id="card" class="light"><div class="rv cg"><div><span class="en">// GREETING CARD</span><h2>اصنع <em>بطاقتك</em></h2><p class="sub">اكتب اسمك وتهنئتك، واختر التصميم ثم حمّلها.</p>
+<div style="display:grid;gap:10px"><input id="cn" placeholder="الاسم" maxlength="22"><input id="cw" placeholder="تهنئتك الشخصية" maxlength="60" value="كل عام وأنتم بخير"><div class="sw" id="cs"></div><button class="btn b" id="dl">تحميل PNG · Download</button></div></div><canvas id="cv" width="900" height="600"></canvas></div></section>
+
+<section id="msgs" class="olive"><div class="rv"><span class="en">// EID WISHES</span><h2>رسائل <em>العيد</em></h2><div class="tf glass"><input id="mn" placeholder="اسمك (اختياري)" maxlength="24"><span></span><textarea class="f" id="mt" rows="2" maxlength="200" placeholder="اكتب تهنئتك"></textarea><button class="btn f" id="mb">انشر التهنئة · Send Wish</button></div><div id="ml"></div></div></section>
+<footer>Made with ♥ for Eid · عيدنا أحلى · العيد فرحة.. واللعب يجمعنا · البيانات تُحفظ في متصفحك فقط</footer>
+<div id="st"></div><div id="toast"></div><canvas id="cf"></canvas>
+
+<script>
+const $=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)];
+const LS=(k,d)=>{try{const v=JSON.parse(localStorage.getItem(k));return v==null?d:v}catch(e){return d}},SV=(k,v)=>{try{localStorage.setItem(k,JSON.stringify(v))}catch(e){}};
+const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const shuf=a=>a.map(v=>[Math.random(),v]).sort((x,y)=>x[0]-y[0]).map(x=>x[1]);
+const C=['#454316','#B9B26C','#FBC2C4','#B95660','#4C051B'],E=['🦅','⭐','🔥','🐎','🌙','🏆','🎯','🎈'];
+let teams=LS('eid_t',[]),msgs=LS('eid_m',[]),sel=LS('eid_s',null),host=false,editId=null,pk={e:E[0],c:C[3]},prev=LS('eid_r',{});
+const toast=t=>{const e=$('#toast');e.textContent=t;e.style.display='block';clearTimeout(toast.t);toast.t=setTimeout(()=>e.style.display='none',2600)};
+const ink=c=>(c==='#FBC2C4'||c==='#B9B26C')?'#4C051B':'#FBC2C4';
+function confetti(){const c=$('#cf'),x=c.getContext('2d');c.width=innerWidth;c.height=innerHeight;const P=Array.from({length:130},()=>({x:Math.random()*c.width,y:-20,v:2+Math.random()*4,r:5+Math.random()*6,c:C[Math.random()*4|0+1]||C[1],s:Math.random()*3-1.5}));let f=0;(function a(){x.clearRect(0,0,c.width,c.height);P.forEach(p=>{p.y+=p.v;p.x+=p.s;x.fillStyle=p.c;x.fillRect(p.x,p.y,p.r,p.r*1.5)});if(++f<180)requestAnimationFrame(a);else x.clearRect(0,0,c.width,c.height)})()}
+const io=new IntersectionObserver(es=>es.forEach(e=>e.isIntersecting&&e.target.classList.add('on')),{threshold:.1});$$('.rv').forEach(e=>io.observe(e));
+setTimeout(confetti,600);$('#go').onclick=()=>{confetti();$('#games').scrollIntoView()};
+/* countdown */
+let cdd=LS('eid_cd','2027-03-10');$('#cdi').value=cdd;$('#cdi').onchange=e=>{cdd=e.target.value;SV('eid_cd',cdd)};
+setInterval(()=>{const b=$$('#cd b');if(!cdd){b.forEach(x=>x.textContent='--');return}let d=new Date(cdd+'T00:00:00')-Date.now();if(d<0){b.forEach(x=>x.textContent='🎉');return}b[0].textContent=Math.floor(d/864e5);b[1].textContent=Math.floor(d/36e5)%24;b[2].textContent=Math.floor(d/6e4)%60;b[3].textContent=Math.floor(d/1e3)%60},1000);
+/* data */
+const D={
+trivia:{n:'تحدي المعلومات',e:'🧠',d:'أسئلة عن العيد والعادات والأكلات.',t:20,it:[
+['ما الصلاة التي تُؤدى صباح العيد؟',['الاستسقاء','العيد','الكسوف','الجمعة'],1,'تُصلّى ركعتين بعد شروق الشمس.'],
+['ما الزكاة المرتبطة بعيد الفطر؟',['زكاة المال','زكاة الزروع','زكاة الفطر','زكاة الركاز'],2,'تُخرج قبل صلاة العيد طُهرة للصائم وطعمة للمساكين.'],
+['في أي شهر هجري يقع عيد الفطر؟',['رجب','شوال','شعبان','محرم'],1,'يبدأ العيد في أول يوم من شوال بعد رمضان.'],
+['ماذا نسمي النقود التي تُعطى للصغار في العيد؟',['العيدية','الراتب','الجائزة','الهدية الورقية'],0,'العيدية من أجمل عادات الفرح عند الأطفال.'],
+['أي حلوى تُصنع غالبًا بالتمر في الأعياد؟',['الباستا','المعمول','السوشي','البرجر'],1,'المعمول من حلويات الضيافة المعروفة في العيد.']]},
+img:{n:'خمن الصورة',e:'🖼️',d:'صورة مموّهة تنكشف تدريجيًا، وكلما كشفتَ أقل ربحت أكثر.',t:25,it:[
+['☕',['القهوة العربية','الشاي','العصير','الحليب'],0,'القهوة رمز الضيافة والكرم.'],
+['💰',['العيدية','الراتب','الضريبة','الهدية'],0,'العيدية فرحة الصغار.'],
+['🎈',['الكرة','الزينة','الفانوس','الشمعة'],1,'الزينة والبالونات تصنع أجواء العيد.'],
+['🍪',['كعك العيد','الخبز','البسكويت المالح','الكيك'],0,'كعك العيد من حلويات الضيافة.']]},
+prov:{n:'أكمل المثل',e:'📜',d:'عبارة شعبية، أكملها.',t:20,it:[
+['الجار قبل ...',['الدار','السوق','الطريق','البيت'],0,'يدل على أهمية حسن الجوار.'],
+['من جدّ ...',['وجد','سهر','ضحك','نام'],0,'من اجتهد نال مراده.'],
+['الصبر مفتاح ...',['الغنى','الفرج','الحرب','السفر'],1,'الصبر طريق الفرج.'],
+['اللي ما يعرف الصقر ...',['يشويه','يحبه','يربيه','يخاف منه'],0,'يُقال لمن يجهل قيمة الشيء.']]},
+who:{n:'من أنا؟',e:'🕵️',d:'تلميحات متتابعة، وكلما قلّت التلميحات زادت نقاطك.',t:30,it:[
+[['يفرح بي الصغار','يعطيني الكبار في العيد','أكون نقودًا غالبًا'],['العيدية','الراتب','المصروف الشهري','الجائزة'],0,'الإجابة: العيدية.'],
+[['أُقدَّم للضيف','أُسكب في فنجان صغير','أُطيَّب بالهيل'],['الشاي','القهوة العربية','الحليب','العصير'],1,'الإجابة: القهوة العربية.'],
+[['أُؤدَّى صباحًا','بعد شروق الشمس','ركعتان بتكبيرات'],['صلاة الجمعة','صلاة الفجر','صلاة العيد','صلاة الضحى'],2,'الإجابة: صلاة العيد.']]},
+speed:{n:'سرعة البديهة',e:'⚡',d:'أسئلة قصيرة بوقت قصير.',t:8,it:[
+['شهر عيد الفطر؟',['شوال','رجب','صفر','ذو القعدة'],0,'شوال.'],
+['كم ركعة في صلاة العيد؟',['ثلاث','أربع','اثنتان','واحدة'],2,'ركعتان.'],
+['الشهر الذي قبل شوال؟',['شعبان','رمضان','رجب','محرم'],1,'رمضان.'],
+['زكاة تُخرج قبل صلاة العيد؟',['زكاة الفطر','زكاة الذهب','زكاة الأنعام','زكاة الزروع'],0,'زكاة الفطر.'],
+['تهنئة العيد المعروفة؟',['كل عام وأنتم بخير','صباح الخير','مع السلامة','نورتم'],0,'كل عام وأنتم بخير.']]},
+tf:{n:'صح أم خطأ',e:'✅',d:'عبارات عن العيد، صح أم خطأ؟',t:15,it:[
+['زكاة الفطر تُخرج قبل صلاة العيد.',['صح','خطأ'],0,'والأفضل أن تكون قبل الصلاة.'],
+['عيد الفطر يأتي في شهر رجب.',['صح','خطأ'],1,'يأتي في أول شوال.'],
+['صلاة العيد أربع ركعات.',['صح','خطأ'],1,'ركعتان.'],
+['العيدية تُعطى غالبًا للأطفال.',['صح','خطأ'],0,'عادة محببة تُفرح الصغار.'],
+['زيارة الأقارب من عادات العيد.',['صح','خطأ'],0,'صلة الرحم من أجمل مظاهر العيد.']]},
+scr:{n:'كلمة السر',e:'🔤',d:'رتّب الحروف المبعثرة. سهل ومتوسط وصعب.',t:30,it:[['عيد','سهل'],['فرح','سهل'],['معمول','متوسط'],['عيدية','متوسط'],['تكبيرات','صعب'],['ضيافة','صعب']]},
+mem:{n:'تحدي الذاكرة',e:'🧩',d:'احفظ الصور ثم اختر ما ظهر لك.',t:6,it:[1]}};
+const POOL=['🍪','☕','💰','🎈','🎁','👘','🌙','🍬','🕌','🌹','🍇','🍯'];
+/* games grid */
+$('#gg').innerHTML=Object.entries(D).map(([k,g])=>`<div class="gc rv"><span class="em">${g.e}</span><h3>${g.n}</h3><p>${g.d}</p><div class="r"><button class="btn s" data-k="${k}" data-m="f">فردي · Solo</button><button class="btn s o" data-k="${k}" data-m="g">جماعي · Team</button></div></div>`).join('');
+$$('.gc').forEach(e=>io.observe(e));$$('.gc button').forEach(b=>b.onclick=()=>start(b.dataset.k,b.dataset.m));
+/* teams */
+const save=()=>{SV('eid_t',teams);renderAll()};
+$('#se').innerHTML=E.map(e=>`<button data-e="${e}">${e}</button>`).join('');
+$('#sc').innerHTML=C.map(c=>`<button class="c" style="background:${c}" data-c="${c}"></button>`).join('');
+function pkr(){$$('#se button').forEach(b=>b.classList.toggle('on',b.dataset.e===pk.e));$$('#sc button').forEach(b=>b.classList.toggle('on',b.dataset.c===pk.c))}
+$$('#se button').forEach(b=>b.onclick=()=>{pk.e=b.dataset.e;pkr()});$$('#sc button').forEach(b=>b.onclick=()=>{pk.c=b.dataset.c;pkr()});pkr();
+function clr(){editId=null;['#tn','#tld','#tm'].forEach(s=>$(s).value='');$('#ts').textContent='إضافة الفريق';$('#tcn').style.display='none'}
+$('#tcn').onclick=clr;
+$('#ts').onclick=()=>{const n=$('#tn').value.trim();if(!n){toast('اكتب اسم الفريق');return}const m=$('#tm').value.split(/[,،\n]/).map(x=>x.trim()).filter(Boolean),l=$('#tld').value.trim();
+if(editId){const t=teams.find(x=>x.id===editId);Object.assign(t,{n,l,m,e:pk.e,c:pk.c})}else{const t={id:Date.now()+''+(Math.random()*99|0),n,l,m,e:pk.e,c:pk.c,p:0,ok:0,w:0};teams.push(t);if(sel)sel.push(t.id)}clr();save();toast('تم الحفظ ✅')};
+const selIds=()=>sel||teams.map(t=>t.id);
+function renderTeams(){$('#tl').innerHTML=teams.length?'':'<p>لا توجد فرق بعد. أضف فريقك الأول!</p>';teams.forEach(t=>{const d=document.createElement('div');d.className='tc';d.style.cssText=`background:${t.c};color:${ink(t.c)}`;d.innerHTML=`<div class="pt">${t.p}</div><div class="ic">${t.e}</div><h3>${esc(t.n)}</h3><small>القائد: ${esc(t.l||'—')}</small><small>الأعضاء: ${esc(t.m.join('، ')||'—')}</small><div style="margin-top:10px;display:flex;gap:8px"><button class="btn s o" style="color:inherit;border-color:currentColor">تعديل</button><button class="btn s o" style="color:inherit;border-color:currentColor">حذف</button></div>`;const [a,b]=d.querySelectorAll('button');
+a.onclick=()=>{editId=t.id;$('#tn').value=t.n;$('#tld').value=t.l;$('#tm').value=t.m.join('، ');pk={e:t.e,c:t.c};pkr();$('#ts').textContent='حفظ التعديل';$('#tcn').style.display='';$('#teams').scrollIntoView()};
+b.onclick=()=>{if(confirm('حذف الفريق '+t.n+'؟')){teams=teams.filter(x=>x!==t);if(sel)sel=sel.filter(i=>i!==t.id);SV('eid_s',sel);save()}};$('#tl').appendChild(d)})}
+/* leaderboard */
+function renderBoard(){const s=teams.slice().sort((a,b)=>b.p-a.p||b.ok-a.ok),np={};s.forEach((t,i)=>np[t.id]=i);
+const h=[200,255,150],o=[1,0,2];$('#pod').innerHTML=s.length?o.filter(i=>s[i]).map(i=>{const t=s[i];return `<div style="background:${t.c};color:${ink(t.c)};height:${h[i]+60}px"><div class="n">${['🥇','🥈','🥉'][i]}</div><div style="font-size:2rem">${t.e}</div><b class="dsp" style="font-size:1.4rem">${esc(t.n)}</b><div class="dsp" style="font-size:1.8rem">${t.p}</div></div>`}).join(''):'<p>سجّل الفرق وابدأ اللعب لتظهر الصدارة.</p>';
+$('#rows').innerHTML=s.map((t,i)=>{const up=prev[t.id]!=null&&i<prev[t.id];return `<div class="rw ${up?'up':''}"><span class="rk">${i+1}</span><span style="font-size:1.8rem">${t.e}</span><span class="nm"><b>${esc(t.n)}</b><br><small>✔ ${t.ok} إجابة صحيحة · 🏆 ${t.w} انتصار</small></span>${up?'<span style="color:var(--g)">⬆</span>':''}<b class="dsp" style="font-size:1.6rem;color:var(--g)">${t.p}</b></div>`}).join('');
+if(s[0]&&prev._f!==s[0].id&&s[0].p>0){confetti()}prev=np;prev._f=s[0]?s[0].id:null;SV('eid_r',prev)}
+/* host */
+function renderHost(){$('#hl').innerHTML=teams.length?teams.map(t=>`<div class="hrow"><label><input type="checkbox" style="width:auto" data-i="${t.id}" ${selIds().includes(t.id)?'checked':''}> ${t.e} ${esc(t.n)} — <b>${t.p}</b></label><button class="btn s" data-a="${t.id}" data-d="5">+5</button><button class="btn s o" data-a="${t.id}" data-d="-5">-5</button></div>`).join(''):'<p>لا توجد فرق.</p>';
+$$('#hl input').forEach(c=>c.onchange=()=>{sel=$$('#hl input:checked').map(x=>x.dataset.i);SV('eid_s',sel)});
+$$('#hl [data-a]').forEach(b=>b.onclick=()=>{const t=teams.find(x=>x.id===b.dataset.a);t.p=Math.max(0,t.p+ +b.dataset.d);save()})}
+$('#rs').onclick=()=>{if(confirm('إعادة ضبط نقاط كل الفرق؟')){teams.forEach(t=>{t.p=t.ok=t.w=0});prev={};save()}};
+$('#stp').onclick=()=>closeSt();
+$('#hb').onclick=e=>{host=!host;e.target.classList.toggle('on',host);$('#host').classList.toggle('on',host);renderAll();if(host)$('#host').scrollIntoView()};
+/* game engine */
+let G=null,tm=null;const st=$('#st');
+function closeSt(){clearInterval(tm);st.classList.remove('on');G=null;renderAll()}
+function start(type,mode){let ids=[];if(mode==='g'){ids=selIds().filter(i=>teams.some(t=>t.id===i));if(!ids.length){toast('سجّل فريقًا وحدده في لوحة المقدم أولًا');$('#teams').scrollIntoView();return}}
+const g=D[type];let list;if(type==='scr')list=g.it.map(x=>({w:x[0],l:x[1]}));else if(type==='mem')list=[1];else list=shuf(g.it).map(x=>{const c=x[1][x[2]],o=type==='tf'?x[1]:shuf(x[1]);return{q:x[0],o,a:o.indexOf(c),i:x[3]}});
+G={type,mode,list,i:0,s:0,ok:0,ids,cur:0,gs:{}};ids.forEach(i=>G.gs[i]=0);st.classList.add('on');show()}
+const curT=()=>G.mode==='g'?teams.find(t=>t.id===G.ids[G.cur%G.ids.length]):null;
+function tick(){clearInterval(tm);tm=setInterval(()=>{G.tl-=.1;const f=$('#tf');if(f)f.style.width=Math.max(0,G.tl/G.T*100)+'%';if(G.tl<=0){clearInterval(tm);if(G.type==='scr')fin(false,'انتهى الوقت! الكلمة: '+G.q.w);else if(G.type==='mem')submitMem();else fin(false,'انتهى الوقت. '+(G.q.i||''))}},100)}
+function head(){let h=`<button class="btn s o x" id="cl">✕ إغلاق</button><div class="in"><div class="top"><span>${D[G.type].e} ${D[G.type].n}</span><span>${G.i+1}/${G.list.length}</span><span>${G.mode==='f'?'النقاط: '+G.s:'🎙️ جماعي'}</span></div><div class="tb"><i id="tf"></i></div>`;
+if(G.mode==='g')h+='<div class="chips">'+G.ids.map((id,k)=>{const t=teams.find(x=>x.id===id);return `<span class="chip ${k===G.cur%G.ids.length?'on':''}" data-k="${k}" style="background:${t.c};color:${ink(t.c)}">${t.e} ${esc(t.n)} · ${G.gs[id]}</span>`}).join('')+'</div>';return h}
+function bind(){$('#cl').onclick=closeSt;$$('.chip').forEach(c=>c.onclick=()=>{if(!G.done){G.cur=+c.dataset.k;$$('.chip').forEach(x=>x.classList.toggle('on',x===c))}})}
+function show(){const q=G.q=G.list[G.i];if(!q)return end();G.done=false;G.T=D[G.type].t;G.tl=G.T;G.blur=3;G.k=1;let h=head();const ty=G.type;
+if(ty==='mem')return mem(h);
+if(ty==='scr'){const sc=shuf(q.w.split(''));let k=0;while(sc.join('')===q.w&&k++<9)sc.sort(()=>Math.random()-.5);h+=`<p style="margin-top:10px">المستوى: <b>${q.l}</b></p><h3 class="qq">رتّب الحروف لتكوّن كلمة مرتبطة بالعيد</h3><div class="tiles">${sc.map(c=>`<b>${c}</b>`).join('')}</div><input id="an" placeholder="اكتب الكلمة"><br><br><button class="btn" id="ck">تحقق</button>`}
+else{if(ty==='img'){const it=D.img.it.find(x=>x[3]===q.i);h+=`<div class="pic" id="pic" style="filter:blur(24px)">${it[0]}</div><center><button class="btn s o" id="rv">اكشف المزيد (نقاط أقل)</button></center><h3 class="qq">ماذا تُظهر الصورة؟</h3>`}
+else if(ty==='who'){const it=D.who.it.find(x=>x[3]===q.i);G.h=it[0];h+=`<h3 class="qq">من أنا؟</h3><ul class="hl" id="hl2"><li>${it[0][0]}</li></ul><button class="btn s o" id="rv">تلميح إضافي (نقاط أقل)</button>`}
+else h+=`<h3 class="qq">${q.q}</h3>`;
+h+=q.o.map((o,i)=>`<button class="opt" data-i="${i}">${o}</button>`).join('')}
+h+='<div id="fa"></div></div>';st.innerHTML=h;bind();
+$$('.opt').forEach(b=>b.onclick=()=>{if(G.done)return;const ok=+b.dataset.i===q.a;$$('.opt').forEach(x=>x.disabled=true);$$('.opt')[q.a].classList.add('ok');if(!ok)b.classList.add('no');fin(ok,(ok?'إجابة صحيحة! 🎉 ':'إجابة خاطئة. ')+(q.i||''))});
+if($('#ck'))$('#ck').onclick=()=>{const ok=$('#an').value.trim()===q.w;fin(ok,ok?'أحسنت! 🎉':'الكلمة الصحيحة: '+q.w)};
+if($('#rv'))$('#rv').onclick=()=>{if(ty==='img'&&G.blur>0){G.blur--;$('#pic').style.filter=`blur(${G.blur*8}px)`}else if(ty==='who'&&G.k<G.h.length){$('#hl2').insertAdjacentHTML('beforeend',`<li>${G.h[G.k++]}</li>`)}};tick()}
+function mem(h){G.ph=1;const seen=shuf(POOL).slice(0,6);G.seen=seen;G.pk=[];st.innerHTML=h+`<h3 class="qq">احفظ هذه الصور!</h3><div class="mg">${seen.map(e=>`<button disabled>${e}</button>`).join('')}</div></div>`;bind();tick();G.T=6;
+setTimeout(()=>{if(!G||G.type!=='mem'||G.done)return;clearInterval(tm);G.T=25;G.tl=25;const all=shuf(POOL);st.innerHTML=head()+`<h3 class="qq">اختر الصور التي ظهرت لك</h3><div class="mg">${all.map(e=>`<button data-e="${e}">${e}</button>`).join('')}</div><button class="btn" id="sm">تأكيد</button><div id="fa"></div></div>`;bind();$$('.mg button').forEach(b=>b.onclick=()=>b.classList.toggle('s'));$('#sm').onclick=submitMem;tick()},6000)}
+function submitMem(){if(G.done)return;const p=$$('.mg button.s').map(b=>b.dataset.e),hit=p.filter(e=>G.seen.includes(e)).length,w=p.length-hit,pts=Math.max(0,hit-w)*4;G.done=true;clearInterval(tm);add(pts,hit);$('#fa').innerHTML=`<div class="fb">أصبت ${hit} من 6 · أخطأت ${w}. الصور: ${G.seen.join(' ')}<br>النقاط: ${pts}</div><button class="btn" id="nx">النتيجة</button>`;$('#nx').onclick=()=>{G.i++;show()}}
+function add(p,ok){G.s+=p;G.ok+=ok;const t=curT();if(t){t.p+=p;t.ok+=ok;G.gs[t.id]+=p;SV('eid_t',teams)}}
+function fin(ok,msg){if(G.done)return;G.done=true;clearInterval(tm);const ty=G.type;let f=1;if(ty==='img')f=(G.blur+1)/4;if(ty==='who')f=(G.h.length-G.k+1)/G.h.length;const pts=ok?Math.max(2,Math.round((10+10*G.tl/G.T)*f)):0;if(ok)add(pts,1);
+$('#fa').innerHTML=`<div class="fb">${msg}<br><b>${ok?'+'+pts+' نقطة'+(curT()?' لفريق '+esc(curT().n):''):'0 نقطة'}</b></div><button class="btn" id="nx">${G.i>=G.list.length-1?'النتيجة':'السؤال التالي'}</button>`;$$('.opt').forEach(x=>x.disabled=true);$('#nx').onclick=()=>{G.i++;if(G.mode==='g')G.cur++;show()};if(G.mode==='g')$$('.chip').forEach(c=>c.onclick=null)}
+function end(){clearInterval(tm);let h=head().replace(/<div class="tb">.*?<\/div>/,'');
+if(G.mode==='f'){h+=`<div class="glass" style="text-align:center;margin-top:20px"><h2>نتيجتك · Your Score</h2><div class="dsp" style="font-size:5rem;color:var(--g)">${G.s}</div><p>إجابات صحيحة: ${G.ok}</p><p>${G.s>=40?'ما شاء الله! بطل العيد 🏆':'محاولة جميلة، أعد اللعب لتتفوق 💪'}</p></div>`}
+else{const r=G.ids.map(id=>teams.find(t=>t.id===id)).sort((a,b)=>G.gs[b.id]-G.gs[a.id]),top=G.gs[r[0].id];if(top>0)r.filter(t=>G.gs[t.id]===top).forEach(t=>t.w++);SV('eid_t',teams);h+=`<div class="glass" style="margin-top:20px"><h2>نتيجة الجولة · Results</h2>${r.map((t,i)=>`<div class="hrow" style="background:${t.c};color:${ink(t.c)}"><b>${i+1}</b> ${t.e} <b style="flex:1">${esc(t.n)}</b><b>${G.gs[t.id]}</b></div>`).join('')}</div>`}
+h+=`<br><button class="btn" id="ag">العب مرة أخرى</button> <button class="btn o" id="cl2">رجوع</button></div>`;st.innerHTML=h;bind();confetti();const g=G;$('#ag').onclick=()=>start(g.type,g.mode);$('#cl2').onclick=closeSt;renderAll()}
+/* card */
+let dsn=0;const DS=[[C[4],C[1],C[2],C[3]],[C[2],C[3],C[4],C[0]],[C[0],C[1],C[2],C[4]]];
+$('#cs').innerHTML=DS.map((d,i)=>`<button class="btn s o" data-i="${i}">تصميم ${i+1}</button>`).join('');$$('#cs button').forEach(b=>b.onclick=()=>{dsn=+b.dataset.i;draw()});
+function draw(){const c=$('#cv'),x=c.getContext('2d'),[bg,ac,tx,sc]=DS[dsn];x.fillStyle=bg;x.fillRect(0,0,900,600);x.fillStyle=sc;x.beginPath();x.arc(150,130,120,0,7);x.fill();x.fillStyle=ac;x.beginPath();x.arc(150,130,80,0,7);x.fill();x.fillStyle=bg;x.beginPath();x.arc(185,115,70,0,7);x.fill();
+x.strokeStyle=ac;x.lineWidth=5;x.strokeRect(24,24,852,552);x.textAlign='center';x.direction='ltr';x.fillStyle=tx;x.font='700 26px Tajawal,Tahoma';x.fillText('E I D   M U B A R A K',450,200);x.direction='rtl';x.fillStyle=ac;x.font='38px Tajawal,Tahoma';x.fillText('عيد فطر مبارك',450,250);x.fillStyle=tx;x.font='86px Lalezar,Tajawal,sans-serif';x.fillText($('#cn').value.trim()||'اسمك هنا',450,360);x.font='36px Tajawal,Tahoma';x.fillText($('#cw').value.trim()||'كل عام وأنتم بخير',450,440);x.fillStyle=ac;x.font='28px Tajawal,Tahoma';x.fillText('عيدنا أحلى',450,530)}
+['#cn','#cw'].forEach(s=>$(s).oninput=draw);(document.fonts?document.fonts.ready:Promise.resolve()).then(draw);draw();
+$('#dl').onclick=()=>{draw();const a=document.createElement('a');a.download='eid-card.png';a.href=$('#cv').toDataURL('image/png');a.click()};
+/* messages */
+function renderMsgs(){$('#ml').innerHTML='';msgs.slice().reverse().forEach(m=>{const d=document.createElement('div');d.className='mc';d.innerHTML=`<p>« ${esc(m.t)} »</p><b>— ${esc(m.n)}</b>`;if(host){const b=document.createElement('button');b.className='btn s b';b.textContent='حذف';b.onclick=()=>{msgs=msgs.filter(x=>x!==m);SV('eid_m',msgs);renderMsgs()};d.appendChild(b)}$('#ml').appendChild(d)})}
+$('#mb').onclick=()=>{const t=$('#mt').value.trim();if(!t){$('#mt').focus();return}msgs.push({n:$('#mn').value.trim()||'محب للعيد',t});SV('eid_m',msgs.slice(-60));msgs=msgs.slice(-60);$('#mt').value='';renderMsgs();confetti()};
+function renderAll(){renderTeams();renderBoard();renderHost();renderMsgs()}
+renderAll();
+</script>
+</body>
+</html>
